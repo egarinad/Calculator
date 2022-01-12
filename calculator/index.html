@@ -1,0 +1,60 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+	<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>My calculator</title>
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!-- Подключаем CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- Кодировка страницы -->
+		<meta charset="UTF-8">
+		
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="output">
+				<div upper-output class="output__upper">
+
+				</div>
+				<div under-output class="output__under">
+					
+				</div>
+			</div>
+				<div class="buttons">
+				<div class="buttons__first-row row">
+					<button delete-all-button class="two">AC</button>
+					<button delete-button>DEL</button>
+					<button operation-button>÷</button>
+				</div>
+				<div class="buttons__second-row row">
+					<button number-button>1</button>
+					<button number-button>2</button>
+					<button number-button>3</button>
+					<button operation-button>×</button>
+				</div>
+				<div class="buttons__third-row row">
+					<button number-button>4</button>
+					<button number-button>5</button>
+					<button number-button>6</button>
+					<button operation-button>-</button>
+				</div>
+				<div class="buttons__fourth-row row">
+					<button number-button>7</button>
+					<button number-button>8</button>
+					<button number-button>9</button>
+					<button operation-button>+</button>
+				</div>
+				<div class="buttons__fifth-row row">
+					<button number-button class="bor-rad-left">.</button>
+					<button number-button>0</button>
+					<button equally-button class="two bor-rad-right">=</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/script.js"></script>
+</html>	
