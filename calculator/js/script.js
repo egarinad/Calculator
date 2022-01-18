@@ -55,7 +55,7 @@ class Calculator {
                 if (this.operation !== undefined) {
                     this.upperOutput = this.upperOutput.toString().slice(0, -1);
                 }
-                //this.upperOutput = this.upperOutput+operation;
+                this.upperOutput = this.upperOutput + operation;
                 this.operation = operation
                 this.underOutput = '';
             }
@@ -63,12 +63,12 @@ class Calculator {
                 if (this.upperOutput !== '') {
                     this.calculate();
                     this.operation = operation;
-                    this.upperOutput = this.underOutput;//+ operation
+                    this.upperOutput = this.underOutput + operation;
                     this.underOutput = '';
                 }
                 else {
                     this.operation = operation;
-                    this.upperOutput = this.underOutput;//+ operation
+                    this.upperOutput = this.underOutput + operation;
                     this.underOutput = '';
                 }
     }
@@ -106,7 +106,7 @@ class Calculator {
     update() {
         this.underOutputText.innerText = this.correctNumber(this.underOutput);
         if (this.operation != null) { /////выводило в верхней строке undef
-            this.upperOutputText.innerText = `${this.correctNumber(this.upperOutput)} ${this.operation}`;
+            this.upperOutputText.innerText = `${this.correctNumber(this.upperOutput)} ${this.operation}`;///я не знаю, как пофиксить повтор знака при дробном числе
         } else {
             this.upperOutputText.innerText = '';
         }
